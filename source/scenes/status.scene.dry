@@ -37,22 +37,30 @@ Prime Minister: [+ chancellor +] ([+ chancellor_party +])
 
 Knesset composition:
 
-{!<span class="tooltip-text" title="Israeli Labor Party">HaAvoda</span>!}: [+ spd_r +]%
+{!<span class="tooltip-text" title="[+ spd_long_name +]">[+ spd_name +]</span>!}: [+ spd_r +]%
 # 1928: 30, 1930: 25, 1932: 22
 {!<span class="tooltip-text" title="Likud – National Liberal Movement">Likud</span>!}: [+ dvp_r +]%
 # 1928: 14, 1930: 7
 [? if sapd_formed and sapd_r > 0: Joint List: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
-{!<span class="tooltip-text" title="Blue and White">B&W</span>!}: [+ z_r +]%
+{!<span class="tooltip-text" title="[+ z_long_name +]">[+ z_name +]</span>!}: [+ z_r +]%
 # 1928: 10, 1930: 13
 {!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_r +]%
 # 1928: 5, 1930: 4 (as DstP)
 {!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_r +]%
+[? if meretz_exists and meretz_r > 0: [+ meretz_name +]: [+ meretz_r +]% ?]
+[? if kulanu_exists and kulanu_r > 0: Kulanu: [+ kulanu_r +]% ?]
 # 1928: 9, 1930: 5
 {!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_r +]%
 # 1928: 3, 1930: 18
 {!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_r +]%
 # 1928: 9, 1930: 10
+[? if raambalad_exists and raambalad_r > 0: {!<span class="tooltip-text" title="United Arab List–National Democratic Alliance">Ra'am–Balad</span>!}: [+ raambalad_r +]% ?]
+[? if hadashtaal_exists and hadashtaal_r > 0: {!<span class="tooltip-text" title="Democratic Front for Peace and Equality–Arab Movement for Renewal">Hadash–Ta'al</span>!}: [+ hadashtaal_r +]% ?]
+[? if hadash_independent and hadash_r > 0: {!<span class="tooltip-text" title="Democratic Front for Peace and Equality">Hadash</span>!}: [+ hadash_r +]% ?]
+[? if raam_independent and raam_r > 0: {!<span class="tooltip-text" title="United Arab List">Ra'am</span>!}: [+ raam_r +]% ?]
+[? if taal_independent and taal_r > 0: {!<span class="tooltip-text" title="Arab Movement for Renewal">Ta'al</span>!}: [+ taal_r +]% ?]
+[? if balad_independent and balad_r > 0: {!<span class="tooltip-text" title="National Democratic Alliance">Balad</span>!}: [+ balad_r +]% ?]
 Others: [+ other_r +]%
 
 [? if spd_in_government = 1 : Budget: [+ budget +] ?]
