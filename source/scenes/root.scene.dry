@@ -232,6 +232,19 @@ Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
 
 // Joint List
 Q.sapd_formed = 1;
+Q.meretz_exists = 1;
+Q.raambalad_exists = 0;
+Q.hadashtaal_exists = 0;
+Q.raam_independent = 0;
+Q.hadash_independent = 0;
+Q.taal_independent = 1;
+Q.balad_independent = 0;
+Q.kulanu_exists = 1;
+Q.zehut_running = 1;
+Q.urwp_exists = 1;
+Q.nr_independent = 1;
+Q.yeshatid_independent = 0;
+
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
@@ -318,9 +331,39 @@ Q.old_other_r = 9;
 // sapd isn't formed yet, but it may be formed
 Q.sapd_r = 10;
 Q.old_sapd_r = 10;
+Q.meretz_r = 4.17;
+Q.old_meretz_r = 4.17;
+Q.raambalad_r = 0;
+Q.old_raambalad_r = 0;
+Q.hadashtaal_r = 0;
+Q.old_hadashtaal_r = 0;
+Q.raam_r = 0;
+Q.old_raam_r = 0;
+Q.hadash_r = 0;
+Q.old_hadash_r = 0;
+Q.taal_r = 0.83;
+Q.old_taal_r = 0.83;
+Q.balad_r = 0;
+Q.old_balad_r = 0;
+Q.kulanu_r = 8.33;
+Q.old_kulanu_r = 8.33;
+Q.zehut_r = 0;
+Q.old_zehut_r = 0;
+Q.urwp_r = 4.17;
+Q.old_urwp_r = 4.17;
+Q.nr_r = 2.5;
+Q.old_nr_r = 2.5;
+Q.yeshatid_r = 0;
+Q.old_yeshatid_r = 0;
 
 // for changing the DDP's name to the DStP
 Q.ddp_name = "DDP";
+Q.meretz_name = "Meretz";
+Q.spd_name = "HaAvoda";
+Q.spd_long_name = "HaAvoda";
+Q.z_name = "B&W";
+Q.z_long_name = "Blue and White";
+Q.urwp_name = "Jewish Home";
 
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
 Q.election_records = [];
@@ -334,7 +377,7 @@ Q.economic_records = [];
 Q.president = "Rivlin";
 // starting chancellor: Wilhelm Marx
 Q.chancellor = "Netanyahu";
-Q.chancellor_party = 'Likud';
+Q.chancellor_party = 'L';
 Q.spd_in_government = 0;
 Q.z_in_government = 1;
 Q.ddp_in_government = 0;
